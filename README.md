@@ -38,13 +38,12 @@ TODO
 
 - [x] Basic implementation
 - [x] Only activate if there's no top `module.exports` call
-- [ ] Hoist imports via `require`, ignore dynamic `require`
-- [ ] Ignore functions & classes in top-level
-- [ ] Configure function arguments (default `data`)
-
 
 ### Future
 
+- [ ] Hoist imports via `require`, ignore dynamic `require`
+- [ ] Ignore functions & classes in top-level
+- [ ] Configure function arguments (default `data`)
 - [ ] Configure function name (default: anonymous)
 - [ ] Named vs default export (default: default export)
 - [ ] ES6 exports through option

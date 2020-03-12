@@ -1,7 +1,7 @@
 {
-  "name": "project-template-node",
+  "name": "babel-plugin-transform-export-function",
   "version": "0.0.1",
-  "description": "Template for NodeJS projects",
+  "description": "A Babel transform that wraps the module code in a function it exports",
   "main": "src/index.js",
   "engines": {
     "node": ">=8.12.0"
@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rhumaric/project-template-node.git"
+    "url": "git+https://github.com/rhumaric/babel-plugin-transform-export-function.git"
   },
   "author": "Romaric Pascal <hello@romaricpascal.is>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rhumaric/project-template-node/issues"
+    "url": "https://github.com/rhumaric/babel-plugin-transform-export-function/issues"
   },
-  "homepage": "https://github.com/rhumaric/project-template-node#readme",
+  "homepage": "https://github.com/rhumaric/babel-plugin-transform-export-function#readme",
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",

@@ -21,7 +21,7 @@ const macro = fileBasedTest(__filename, (t, { input, options = {} }) => {
 const fixtures = glob(resolve(fixturesPath(__filename), '**', '*.input.js'));
 
 // A regexp for filtering tests by fixtureName
-const filterByFixtureName = null;
+const filterByFixtureName = /shortcut-over/;
 
 fixtures
   .map(path => relative(fixturesPath(__filename), path))
@@ -90,11 +90,11 @@ function withOutputComparison(fn) {
         compared = true;
         return t.is(
           // Ignore whitespace
-          output.replace(/\s/g, ''),
+          output.replace(/\s/g, '').replace(/;/g, ''),
           expected
             .replace(/\/\/\s*prettier-ignore/, '') // Ignore prettier comments
             .replace(/\s/g, '') // Ignore whitespace
-            .replace(/;$/, '') // Ignore final semi colon, rather than disabling prettier
+            .replace(/;/g, '') // Ignore semi colons, rather than disabling prettier
         );
       }
     };

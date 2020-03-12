@@ -37,7 +37,7 @@ TODO
 ---
 
 - [x] Basic implementation
-- [ ] Only activate if there's no top level explicit exports (ignore deep `module.exports`)
+- [x] Only activate if there's no top `module.exports` call
 - [ ] Hoist imports via `require`, ignore dynamic `require`
 - [ ] Ignore functions & classes in top-level
 - [ ] Configure function arguments (default `data`)
@@ -49,4 +49,3 @@ TODO
 - [ ] Named vs default export (default: default export)
 - [ ] ES6 exports through option
 - [ ] Automatic detection of ES6 vs CJS (existing `require` => CJS, existing `import` or `import()` => ES6)
-- [ ] Handle deep `module.exports`? Probably useless as most new code will be ES6 modules anyways.

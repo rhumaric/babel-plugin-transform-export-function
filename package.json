@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-export-function",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A Babel transform that wraps the module code in a function it exports",
   "main": "src/index.js",
   "engines": {
